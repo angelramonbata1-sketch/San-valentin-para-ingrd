@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nuestra Historia 💖</title>
+
+<style>
+    canvas {
+      display: block;
+    }
+
+    .texto {
+      position: absolute;
+      top: 12px;
+      left: 12px;
+      padding: 10px 14px;
+      background: rgba(255, 255, 255, 0.7);
+      border-radius: 14px;
+      font-size: 14px;
+      box-shadow: 0 10px 20px rgba(0,0,0,0.08);
+    }
+
+body {
+    margin: 0;
+    overflow: hidden;
+    font-family: 'Segoe UI', sans-serif;
+    scroll-behavior: smooth;
+}
+
+#bgVideo{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+section {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 40px;
+    position: relative;
+}
+
+h1 {
+    font-size: 2.5em;
+    color: white;
+}
+
+p {
+    max-width: 600px;
+    font-size: 1.2em;
+    color: white;
+}
+
+.imagen {
+    margin-top: 20px;
+}
+
+.imagen img {
+    width: 250px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 20px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+    transition: 0.4s;
+}
+
+.imagen img:hover {
+    transform: scale(1.05);
+}
+
+button {
+    margin-top: 25px;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 25px;
+    background-color: #e91e63;
+    color: white;
+    font-size: 1em;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #c2185b;
+    transform: scale(1.1);
+}
+
+
+.corazon {
+    position: absolute;
+    font-size: 20px;
+    animation: flotar 5s linear infinite;
+}
+
+@keyframes flotar {
+    0% { transform: translateY(100vh); opacity: 1; }
+    100% { transform: translateY(-10vh); opacity: 0; }
+}
+</style>
+</head>
+
+<body>
+        <video autoplay muted loop playsinline id="bgVideo">
+  <source src="VID/WhatsApp Video 2026-02-14 at 5.44.32 PM.mp4" type="video/mp4">
+</video>
+
+<section>
+    <h1>💖 Cómo Nos Conocimos 💖</h1>
+    <p>
+        Todo comenzó en un día cualquiera… 
+        No imaginaba que ese momento cambiaría mi historia para siempre. 
+        Una conversación sencilla se convirtió en risas, 
+        y esas risas en algo que nunca quise perder ✨
+    </p>
+
+    <!-- Aquí agregas tu primera imagen -->
+    <div class="imagen">
+        <img src="IMG/WhatsApp Image 2026-02-14 at 3.09.39 PM.jpeg" alt="Nuestro primer momento">
+    </div>
+
+    <button onclick="irAParte2()">Sigue leyendo 💌</button>
+</section>
+
+<section id="parte2">
+    <h1>El Inicio de Algo Especial 💕</h1>
+    <p>
+        Poco a poco empezamos a conocernos más… 
+        Cada mensaje era especial, cada mirada tenía magia. 
+        Sin darme cuenta, ya eras parte de mis pensamientos 
+        y de mis días más felices ❤️
+    </p>
+
+    <!-- Segunda imagen -->
+    <div class="imagen">
+        <img src="IMG/WhatsApp Image 2026-02-14 at 3.09.43 PM.jpeg" alt="Momentos especiales">
+    </div>
+
+    <button onclick="irAParte3()"> 💌 </button>
+</section>
+
+<section id="parte3">
+    <h1>Y Hoy… ✨</h1>
+    <p>
+        Hoy entiendo que conocerte fue la casualidad más bonita 
+        que pudo pasarme. 
+        Gracias por cada recuerdo, cada abrazo 
+        y cada momento que seguimos construyendo juntos 💘
+    </p>
+
+    <!-- Tercera imagen -->
+    <div class="imagen">
+        <img src="IMG/WhatsApp Image 2026-02-14 at 3.30.16 PM (2).jpeg" alt="Nuestro presente">
+    </div>
+
+    <button onclick="irAParte4()"> 💌 </button>
+    </section>
+
+    <section id="parte4">
+    <h1> Te amo demasiado corazon💕</h1>
+    <p>
+       Gracias por pintar mis dias de amor y de color❤️
+    </p>
+
+    <!-- Segunda imagen -->
+    <div class="imagen">
+        <img src="IMG/WhatsApp Image 2026-02-14 at 3.30.17 PM (2).jpeg" alt="Momentos especiales">
+    </div>
+ 
+     <button onclick="irAParte5()"> 💌 </button>
+    </section>
+
+     <section id="parte5">
+    <h1> 💕 con mucho amor 💕</h1>
+    <p>
+         Para ti que haces que todo sea mas bonito❤️
+    </p>
+
+    <!-- Segunda imagen -->
+    <div class="imagen">
+        <img src="IMG/WhatsApp Image 2026-02-14 at 3.30.16 PM.jpeg" alt="Momentos especiales">
+    </div>
+    src="VID/" type="video/mp4">
+     <button onclick="irAParte6()"> 💌 </button>
+    </section>
+
+
+    <section id="parte6">
+    <h1>💖 Y que por suerte 💖</h1>
+    <p>
+        Entre tantos caminos, que suerte la mia de encontrarte ✨
+    </p>
+
+    <!-- Aquí agregas tu primera imagen -->
+    <div class="imagen">
+        <img src="IMG/WhatsApp Image 2026-02-14 at 3.30.17 PM (1).jpeg" alt="Nuestro primer momento">
+    </div>
+
+    <button onclick="irAParte7()"> 💌 </button>
+</section>
+
+<section id="parte7">
+    <h1> 💕Cuando me enamore de ti 💕</h1>
+    <p>
+         Cuando me enamore de ti, entendi
+         que no era que todas aquellas 
+         personas que hablaron del amor 
+         estuvieran mal, sino que
+         <i>nunca hablaron de ti</i>❤️
+    </p>
+
+    <!-- Segunda imagen -->
+    <div class="imagen">
+        <img src="IMG/WhatsApp Image 2026-02-14 at 3.30.16 PM (3).jpeg" alt="Momentos especiales">
+    </div>
+
+    <button onclick="irAParte8()"> 💌 </button>
+</section>
+
+<section id="parte8">
+    <h1> te prometo que...✨</h1>
+    <p>
+         Si te apagas, te prometo amarte con mas fuerza
+         Prometo devolverte la <i>luz</i> que te caracteriza,
+         regar tu jardi con el amor que me diste cuando estaba
+         marchito. Te prometo cuidarte cuando te enfermes y hacer
+         lo que haga falta para asegurarme de que vuelvas a florecer, 💘
+    </p>
+
+    <!-- Tercera imagen -->
+    <div class="imagen">
+        <img src="IMG/WhatsApp Image 2026-02-14 at 3.30.17 PM (1).jpeg" alt="Nuestro presente">
+    </div>
+
+    <button onclick="irAParte9()">💌</button>
+</section>
+
+    <section id="parte9">
+    <h1>Y prometo 💕</h1>
+    <p>
+         Prometo, mi amor, que te amare
+         con la segurdad de sabee lo que siento,
+         de ya no ser un niño descubriendo lo
+         que significa amar❤️
+    </p>
+
+    <!-- Segunda imagen -->
+    <div class="imagen">
+        <img src="IMG/WhatsApp Image 2026-02-14 at 3.30.17 PM.jpeg" alt="Momentos especiales">
+    </div>
+
+    <button onclick="volverInicio()">Volver al inicio 💞</button>
+</section>
+
+<script>
+function irAParte2() {
+    document.getElementById("parte2").scrollIntoView();
+}
+
+function irAParte3() {
+    document.getElementById("parte3").scrollIntoView();
+}
+
+function irAParte4() {
+    document.getElementById("parte4").scrollIntoView();
+}
+
+function irAParte5() {
+    document.getElementById("parte5").scrollIntoView();
+}
+
+function irAParte6() {
+    document.getElementById("parte6").scrollIntoView();
+}
+
+function irAParte7() {
+    document.getElementById("parte7").scrollIntoView();
+}
+
+function irAParte8() {
+    document.getElementById("parte8").scrollIntoView();
+}
+
+function irAParte9() {
+    document.getElementById("parte9").scrollIntoView();
+}
+
+function volverInicio() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+
+function crearCorazon() {
+    const corazon = document.createElement("div");
+    corazon.classList.add("corazon");
+    corazon.innerHTML = "💗";
+    corazon.style.left = Math.random() * 100 + "vw";
+    corazon.style.animationDuration = Math.random() * 3 + 3 + "s";
+    document.body.appendChild(corazon);
+
+    setTimeout(() => {
+    corazon.remove();
+}, 5000);
+
+}
+setInterval(crearCorazon,400);
+
+</script>
+
+</body>
+</html>
